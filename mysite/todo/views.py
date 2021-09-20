@@ -1,3 +1,4 @@
-from django.shortcuts import render
 
-# Create your views here.
+
+class TodoVueOnlyTV(TemplateView):
+    template_name = 'todo/todo_vue_only.html'
