@@ -1,5 +1,5 @@
-from django.views.generic import TemplateView, CreateView, ListView, DeleteView
 from django.urls import reverse_lazy
+from django.views.generic import TemplateView, CreateView, ListView, DeleteView
 
 from todo.models import Todo
 
@@ -21,4 +21,3 @@ class TodoDelV(DeleteView):
     model = Todo
     template_name = 'todo/todo_confirm_delete.html'
     success_url = reverse_lazy('todo:list')
-    # success_url = reverse_lazy항상하기
